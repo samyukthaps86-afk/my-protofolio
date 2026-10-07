@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Samyuktha PS - Software Engineer and Data Science Specialist featuring engineering projects, technical skills, career timeline, interactive chat, and contact.">
+  <meta name="keywords" content="Samyuktha PS, Software Engineer, Portfolio, Data Science, Python, Java, C, IoT, Web Developer">
+  <meta name="author" content="Samyuktha PS">
+  
+  <title>Samyuktha PS | Software Engineer & Data Science Portfolio</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+  
+  <!-- Modern Typography: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Skip to main content link for accessibility -->
+  <a href="#home" class="skip-link">Skip to main content</a>
+
+  <!-- ======================================================= -->
+  <!-- NAVIGATION BAR                                          -->
+  <!-- ======================================================= -->
+  <header class="navbar-wrapper" id="header">
+    <nav class="navbar container" aria-label="Main Navigation">
+      <a href="#home" class="nav-brand" aria-label="Samyuktha PS Homepage">
+        <span class="brand-code">&lt;</span>
+        <span class="brand-name">Samyuktha</span>
+        <span class="brand-dot">.dev</span>
+        <span class="brand-code">/&gt;</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <ul class="nav-links" id="nav-links" role="menubar">
+        <li role="none"><a href="#home" class="nav-link active" role="menuitem">Home</a></li>
+        <li role="none"><a href="#about" class="nav-link" role="menuitem">About</a></li>
+        <li role="none"><a href="#skills" class="nav-link" role="menuitem">Skills</a></li>
+        <li role="none"><a href="#timeline" class="nav-link" role="menuitem">Timeline</a></li>
+        <li role="none"><a href="#projects" class="nav-link" role="menuitem">Projects</a></li>
+        <li role="none"><a href="#testimonials" class="nav-link" role="menuitem">Testimonials</a></li>
+        <li role="none"><a href="#chat" class="nav-link" role="menuitem">Chat</a></li>
+        <li role="none"><a href="#contact" class="nav-link" role="menuitem">Contact</a></li>
+      </ul>
+
+      <!-- Nav Actions (Theme Switcher & Mobile Menu Button) -->
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" class="btn-icon theme-btn" type="button" aria-label="Toggle dark and light mode" title="Toggle theme">
+          <span class="theme-icon-dark" aria-hidden="true">🌙</span>
+          <span class="theme-icon-light" aria-hidden="true">☀️</span>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="menu-toggle" class="btn-icon menu-btn" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-drawer">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Off-Canvas / Dropdown Navigation -->
+    <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+      <ul class="mobile-nav-links">
+        <li><a href="#home" class="mobile-nav-link active"><span>🏠</span> Home</a></li>
+        <li><a href="#about" class="mobile-nav-link"><span>👤</span> About</a></li>
+        <li><a href="#skills" class="mobile-nav-link"><span>⚡</span> Skills</a></li>
+        <li><a href="#timeline" class="mobile-nav-link"><span>⏳</span> Timeline</a></li>
+        <li><a href="#projects" class="mobile-nav-link"><span>📂</span> Projects</a></li>
+        <li><a href="#testimonials" class="mobile-nav-link"><span>⭐</span> Testimonials</a></li>
+        <li><a href="#chat" class="mobile-nav-link"><span>💬</span> Chat Assistant</a></li>
+        <li><a href="#contact" class="mobile-nav-link"><span>✉️</span> Contact</a></li>
+      </ul>
+      <div class="mobile-drawer-footer">
+        <a href="#contact" class="btn btn-primary btn-sm btn-block">Let's Connect</a>
+      </div>
+    </div>
+    <div class="drawer-backdrop" id="drawer-backdrop"></div>
+  </header>
+
+  <!-- ======================================================= -->
+  <!-- MAIN CONTENT                                            -->
+  <!-- ======================================================= -->
+  <main id="main-content">
+
+    <!-- ===================================================== -->
+    <!-- 1. HOME (HERO) SECTION                                -->
+    <!-- ===================================================== -->
+    <section id="home" class="section hero-section" aria-label="Home">
+      <div class="container hero-container">
+        
+        <!-- Left Hero Content -->
+        <div class="hero-text-content">
+          <div class="hero-badge">
+            <span class="status-pulse"></span>
+            <span>Available for Opportunities</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Samyuktha PS</span>
+          </h1>
+
+          <div class="hero-tagline-wrapper">
+            <span class="tagline-prefix">I build </span>
+            <span class="dynamic-tagline" id="dynamic-tagline">robust software systems & data pipelines</span>
+          </div>
+
+          <p class="hero-description">
+            Software Engineer pursuing B.E. in Data Science at Adichunchanagiri Institute of Technology. 
+            Passionate about algorithmic problem solving, full-stack applications, and real-time IoT automation.
+          </p>
+
+          <!-- Call to Action Buttons -->
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary" id="hero-btn-projects">
+              <span>View Projects</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="#chat" class="btn btn-secondary" id="hero-btn-chat">
+              <span>Chat with Assistant</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+            </a>
+            <a href="#contact" class="btn btn-outline" id="hero-btn-contact">
+              <span>Contact Me</span>
+            </a>
+          </div>
+
+          <!-- Quick Stats Counter -->
+          <div class="hero-stats-grid">
+            <div class="stat-card">
+              <span class="stat-number">4+</span>
+              <span class="stat-label">Core Languages</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">3+</span>
+              <span class="stat-label">Key Projects</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Problem Dedication</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Hero Visual / Developer Card -->
+        <div class="hero-visual">
+          <div class="hero-card-glow"></div>
+          <div class="hero-profile-card">
+            <div class="profile-card-header">
+              <div class="code-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <span class="window-title">engineer_profile.json</span>
+            </div>
+
+            <div class="profile-image-container">
+              <img src="profile.jpg" alt="Portrait of Samyuktha PS" class="hero-profile-img" onerror="this.onerror=null;this.src='pixel_avatar.jpg';">
+              <div class="profile-badge-overlay">
+                <span class="badge-icon">📍</span>
+                <span>Chikkamagaluru, India</span>
+              </div>
+            </div>
+
+            <div class="profile-card-details">
+              <div class="profile-title-block">
+                <h3 class="profile-name">Samyuktha PS</h3>
+                <p class="profile-sub">Software Engineer · Data Science</p>
+              </div>
+
+              <!-- Floating Quick Badges -->
+              <div class="hero-pills">
+                <span class="pill-badge">Python</span>
+                <span class="pill-badge">Java</span>
+                <span class="pill-badge">C / DSA</span>
+                <span class="pill-badge">Arduino IoT</span>
+                <span class="pill-badge">Web Dev</span>
+              </div>
+
+              <!-- Terminal Status Line -->
+              <div class="profile-status-bar">
+                <span class="status-icon">🚀</span>
+                <span class="status-text">Status: <code>Ready to innovate</code></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- 2. ABOUT SECTION                                      -->
+    <!-- ===================================================== -->
+    <section id="about" class="section about-section" aria-labelledby="about-heading">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header text-center">
+          <span class="section-tag">BACKGROUND & PASSION</span>
+          <h2 id="about-heading" class="section-title">About Me</h2>
+          <p class="section-subtitle">Bridging mathematical intuition, software engineering, and real-world system design.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left Column: Biography & Highlights -->
+          <div class="about-bio-column">
+            <div class="bio-card">
+              <h3 class="bio-heading">Transforming Logic into Elegant Software</h3>
+              <p class="bio-paragraph">
+                Hello! I'm <strong>Samyuktha PS</strong>, a passionate software engineer based in Chikkamagaluru, Karnataka. 
+                I am currently pursuing my <strong>Bachelor of Engineering in Data Science</strong> at Adichunchanagiri Institute of Technology.
+              </p>
+              <p class="bio-paragraph">
+                My journey in technology began with a curiosity about how abstract code translates into tangible impact. 
+                From mastering fundamental data structures and algorithms in C, Java, and Python, to building automated IoT 
+                greenhouse monitoring systems with microcontrollers, I enjoy crafting reliable, efficient, and well-architected solutions.
+              </p>
+              <p class="bio-paragraph quote-highlight">
+                “Dream It. Plan It. Work for It. Make it happen.” — Always driven by persistent curiosity and continuous learning.
+              </p>
+            </div>
+
+            <!-- Key Feature Highlight Cards -->
+            <div class="highlights-grid">
+              <div class="highlight-card">
+                <div class="highlight-icon">💡</div>
+                <div class="highlight-content">
+                  <h4>Algorithmic Problem Solving</h4>
+                  <p>Strong foundations in Data Structures, Algorithms, and structured programming paradigms.</p>
+                </div>
+              </div>
+
+              <div class="highlight-card">
+                <div class="highlight-icon">📊</div>
+                <div class="highlight-content">
+                  <h4>Data Science & Analytics</h4>
+                  <p>Data preprocessing, analytics dashboards, predictive modeling, and statistical thinking.</p>
+                </div>
+              </div>
+
+              <div class="highlight-card">
+                <div class="highlight-icon">🌿</div>
+                <div class="highlight-content">
+                  <h4>IoT & Hardware Integration</h4>
+                  <p>Microcontroller programming, sensor telemetry, and closed-loop automated hardware control.</p>
+                </div>
+              </div>
+
+              <div class="highlight-card">
+                <div class="highlight-icon">⚡</div>
+                <div class="highlight-content">
+                  <h4>Modern Web Engineering</h4>
+                  <p>Clean semantic HTML5, modern CSS layouts, responsive design, and performant JavaScript logic.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Personal Info Card & Quick Facts -->
+          <div class="about-sidebar-column">
+            <div class="info-card">
+              <h3 class="info-card-title">Quick Information</h3>
+              
+              <ul class="info-list">
+                <li class="info-item">
+                  <span class="info-label">Degree</span>
+                  <span class="info-value">B.E. in Data Science (2025–Present)</span>
+                </li>
+                <li class="info-item">
+                  <span class="info-label">Institution</span>
+                  <span class="info-value">Adichunchanagiri Institute of Tech</span>
+                </li>
+                <li class="info-item">
+                  <span class="info-label">Location</span>
+                  <span class="info-value">Chikkamagaluru, Karnataka, India</span>
+                </li>
+                <li class="info-item">
+                  <span class="info-label">Primary Languages</span>
+                  <span class="info-value">Python, Java, C, JavaScript</span>
+                </li>
+                <li class="info-item">
+                  <span class="info-label">Certification</span>
+                  <span class="info-value">Unix Systems (Infosys Springboard)</span>
+                </li>
+                <li class="info-item">
+                  <span class="info-label">Training</span>
+                  <span class="info-value">Core CS & DSA (TAP Academy)</span>
+                </li>
+              </ul>
+
+              <!-- Interactive View Switcher (Real Photo vs Pixel Avatar) -->
+              <div class="avatar-switcher-box">
+                <span class="switcher-label">Avatar Style:</span>
+                <div class="switcher-buttons">
+                  <button type="button" class="btn btn-xs active" id="btn-show-photo">Photo</button>
+                  <button type="button" class="btn btn-xs" id="btn-show-pixel">Pixel Art</button>
+                </div>
+              </div>
+
+              <div class="info-card-footer">
+                <a href="#contact" class="btn btn-primary btn-sm btn-block">Get In Touch</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- 3. SKILLS SECTION                                     -->
+    <!-- ===================================================== -->
+    <section id="skills" class="section skills-section" aria-labelledby="skills-heading">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-tag">TECHNICAL ARSENAL</span>
+          <h2 id="skills-heading" class="section-title">Skills & Proficiencies</h2>
+          <p class="section-subtitle">A balanced toolkit spanning low-level computing, data science, hardware, and web engineering.</p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="filter-tabs-wrapper">
+          <div class="filter-tabs" role="tablist" aria-label="Skills Category Filter">
+            <button type="button" class="filter-tab active" data-filter="all" role="tab" aria-selected="true">All Skills</button>
+            <button type="button" class="filter-tab" data-filter="languages" role="tab" aria-selected="false">Languages</button>
+            <button type="button" class="filter-tab" data-filter="data" role="tab" aria-selected="false">Data & Core CS</button>
+            <button type="button" class="filter-tab" data-filter="web" role="tab" aria-selected="false">Web & Tools</button>
+            <button type="button" class="filter-tab" data-filter="iot" role="tab" aria-selected="false">IoT & Embedded</button>
+          </div>
+        </div>
+
+        <!-- Skills Grid -->
+        <div class="skills-grid" id="skills-grid">
+          
+          <!-- Skill: Python -->
+          <div class="skill-card" data-category="languages data">
+            <div class="skill-card-top">
+              <div class="skill-icon-badge">🐍</div>
+              <div class="skill-meta">
+                <h3 class="skill-name">Python</h3>
+                <span class="skill-level-text">Advanced</span>
+              </div>
+              <span class="skill-percentage">90%</span>
+            </div>
+            <div class="progress-track" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-fill" style="width: 90%;"></div>
+            </div>
+            <p class="skill-desc">Data processing, analytics scripts, algorithmic problem solving, Pandas & NumPy.</p>
+          </div>
+
+          <!-- Skill: Java -->
+          <div class="skill-card" data-category="languages">
+            <div class="skill-card-top">
+              <div class="skill-icon-badge">☕</div>
+              <div class="skill-meta">
+                <h3 class="skill-name">Java</h3>
+                <span class="skill-level-text">Proficient</span>
+              </div>
+              <span class="skill-percentage">85%</span>
+            </div>
+            <div class="progress-track" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-fill" style="width: 85%;"></div>
+            </div>
+            <p class="skill-desc">Object-Oriented Programming, modular class design, robust architectural patterns.</p>
+          </div>
+
+          <!-- Skill: C Language -->
+          <div class="skill-card" data-category="languages data">
+            <div class="skill-card-top">
+              <div class="skill-icon-badge">💻</div>
+              <div class="skill-meta">
+                <h3 class="skill-name">C Language</h3>
+                <span class="skill-level-text">Proficient</span>
+              </div>
+              <span class="skill-percentage">85%</span>
+            </div>
+            <div class="progress-track" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-fill" style="width: 85%;"></div>
+            </div>
+            <p class="skill-desc">Memory management, pointers, low-level data structures, and foundational algorithms.</p>
+          </div>
+
+          <!-- Skill: Data Structures & Algorithms -->
+          <div class="skill-card" data-category="data">
+            <div class="skill-card-top">
+              <div class="skill-icon-badge">🧩</div>
+              <div class="skill-meta">
+                <h3 class="skill-name">Data Structures & DSA</h3>
+                <span class="skill-level-text">Intermediate+</span>
+              </div>
+              <span class="skill-percentage">80%</span>
+            </div>
+            <div class="progress-track" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-fill" style="width: 80%;"></div>
+            </div>
+            <p class="skill-desc">Arrays, linked lists, stacks, queues, trees, searching, sorting & Big-O optimization.</p>
+          </div>
+
+          <!-- Skill: Arduino & Embedded C -->
+          <div class="skill-card" data-category="iot">
+            <div class="skill-card-top">
+              <div class="skill-icon-badge">🔌</div>
+              <div class="skill-meta">
+                <h3 class="skill-name">Arduino & Embedded C</h3>
+                <span class="skill-level-text">Proficient</span>
+              </div>
+              <span class="skill-percentage">85%</span>
+            </div>
+            <div class="progress-track" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-fill" style="width: 85%;"></div>
+            </div>
+            <p class="skill-desc">Microcontroller firmware, GPIO pin manipulation, analog/digital sensor reading.</p>
+          </div>
+
+          <!-- Skill: Sensor Telemetry & IoT -->
+          <div class="skill-card" data-category="iot">
+            <div class="skill-card-top">
+              <div class="skill-icon-badge">🌡️</div>
+              <div class="skill-meta">
+                <h3 class="skill-name">Sensor Telemetry & IoT</h3>
+                <span class="skill-level-text">Proficient</span>
+              </div>
+              <span class="skill-percentage">85%</span>
+            </div>
+            <div class="progress-track" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-fill" style="width: 85%;"></div>
+            </div>
+            <p class="skill-desc">DHT11 environmental sensors, threshold relay actuation, real-time metrics telemetry.</p>
+          </div>
+
+          <!-- Skill: HTML5 & CSS3 -->
+          <div class="skill-card" data-category="web">
+            <div class="skill-card-top">
+              <div class="skill-icon-badge">🌐</div>
+              <div class="skill-meta">
+                <h3 class="skill-name">HTML5 & Modern CSS3</h3>
+                <span class="skill-level-text">Advanced</span>
+              </div>
+              <span class="skill-percentage">90%</span>
+            </div>
+            <div class="progress-track" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-fill" style="width: 90%;"></div>
+            </div>
+            <p class="skill-desc">Semantic markup, responsive Flexbox/Grid, CSS custom properties, smooth transitions.</p>
+          </div>
+
+          <!-- Skill: JavaScript ES6+ -->
+          <div class="skill-card" data-category="web">
+            <div class="skill-card-top">
+              <div class="skill-icon-badge">📜</div>
+              <div class="skill-meta">
+                <h3 class="skill-name">JavaScript (ES6+)</h3>
+                <span class="skill-level-text">Proficient</span>
+              </div>
+              <span class="skill-percentage">85%</span>
+            </div>
+            <div class="progress-track" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-fill" style="width: 85%;"></div>
+            </div>
+            <p class="skill-desc">DOM manipulation, event delegation, asynchronous logic, state management, interactive UI.</p>
+          </div>
+
+          <!-- Skill: Unix & Shell Scripting -->
+          <div class="skill-card" data-category="data web">
+            <div class="skill-card-top">
+              <div class="skill-icon-badge">💻</div>
+              <div class="skill-meta">
+                <h3 class="skill-name">Unix & Shell Scripting</h3>
+                <span class="skill-level-text">Certified</span>
+              </div>
+              <span class="skill-percentage">80%</span>
+            </div>
+            <div class="progress-track" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-fill" style="width: 80%;"></div>
+            </div>
+            <p class="skill-desc">Infosys Springboard certified: CLI utilities, file pipelines, process automation.</p>
+          </div>
+
+          <!-- Skill: Git & Version Control -->
+          <div class="skill-card" data-category="web">
+            <div class="skill-card-top">
+              <div class="skill-icon-badge">🐙</div>
+              <div class="skill-meta">
+                <h3 class="skill-name">Git & GitHub</h3>
+                <span class="skill-level-text">Proficient</span>
+              </div>
+              <span class="skill-percentage">85%</span>
+            </div>
+            <div class="progress-track" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-fill" style="width: 85%;"></div>
+            </div>
+            <p class="skill-desc">Distributed version control, branch management, collaborative pull requests, repo commits.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- 4. TIMELINE SECTION                                   -->
+    <!-- ===================================================== -->
+    <section id="timeline" class="section timeline-section" aria-labelledby="timeline-heading">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-tag">EDUCATION & JOURNEY</span>
+          <h2 id="timeline-heading" class="section-title">Milestones & Timeline</h2>
+          <p class="section-subtitle">Key educational chapters, professional training, and engineering project achievements.</p>
+        </div>
+
+        <div class="timeline-container">
+          <div class="timeline-line"></div>
+
+          <!-- Timeline Item 1: B.E. Data Science -->
+          <div class="timeline-item timeline-left">
+            <div class="timeline-marker">
+              <span class="timeline-icon">🎓</span>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <span class="timeline-badge badge-education">Education</span>
+                <span class="timeline-date">2025 — Present</span>
+              </div>
+              <h3 class="timeline-title">Bachelor of Engineering in Data Science</h3>
+              <p class="timeline-institution">Adichunchanagiri Institute of Technology, Chikkamagaluru</p>
+              <p class="timeline-desc">
+                Currently pursuing B.E. in Data Science. Focus on core computational theory, statistical analysis, algorithmic design, and large-scale data engineering.
+              </p>
+              <div class="timeline-tags">
+                <span class="pill-badge">Data Science</span>
+                <span class="pill-badge">Algorithms</span>
+                <span class="pill-badge">Machine Learning</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2: Unix Certification -->
+          <div class="timeline-item timeline-right">
+            <div class="timeline-marker">
+              <span class="timeline-icon">📜</span>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <span class="timeline-badge badge-cert">Certification</span>
+                <span class="timeline-date">Oct 2026</span>
+              </div>
+              <h3 class="timeline-title">Unix Systems Certification</h3>
+              <p class="timeline-institution">Infosys Springboard</p>
+              <p class="timeline-desc">
+                Completed comprehensive certification on Unix Operating Systems. Acquired in-depth command over terminal navigation, file permissions, shell scripting, and process lifecycle management.
+              </p>
+              <div class="timeline-tags">
+                <span class="pill-badge">Unix CLI</span>
+                <span class="pill-badge">Shell Scripting</span>
+                <span class="pill-badge">Infosys</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3: TAP Academy Training -->
+          <div class="timeline-item timeline-left">
+            <div class="timeline-marker">
+              <span class="timeline-icon">🚀</span>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <span class="timeline-badge badge-training">Training</span>
+                <span class="timeline-date">2025 — 2026</span>
+              </div>
+              <h3 class="timeline-title">Core CS & Programming Bootcamp</h3>
+              <p class="timeline-institution">TAP Academy, Bangalore</p>
+              <p class="timeline-desc">
+                Intensive practical training program in object-oriented design and algorithm optimization across C, Python, and Java with daily coding challenges.
+              </p>
+              <div class="timeline-tags">
+                <span class="pill-badge">C Language</span>
+                <span class="pill-badge">Java OOP</span>
+                <span class="pill-badge">Python</span>
+                <span class="pill-badge">DSA</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 4: IoT Project -->
+          <div class="timeline-item timeline-right">
+            <div class="timeline-marker">
+              <span class="timeline-icon">🌿</span>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <span class="timeline-badge badge-project">Project Milestone</span>
+                <span class="timeline-date">2025</span>
+              </div>
+              <h3 class="timeline-title">IoT Greenhouse Automation System</h3>
+              <p class="timeline-institution">Embedded Systems Project</p>
+              <p class="timeline-desc">
+                Engineered an automated environment controller with Arduino Uno, temperature/humidity sensors, and dynamic relay circuits for automated climate regulation.
+              </p>
+              <div class="timeline-tags">
+                <span class="pill-badge">Arduino</span>
+                <span class="pill-badge">Embedded C</span>
+                <span class="pill-badge">Sensors</span>
+                <span class="pill-badge">Relays</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 5: Portfolio Project -->
+          <div class="timeline-item timeline-left">
+            <div class="timeline-marker">
+              <span class="timeline-icon">💻</span>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <span class="timeline-badge badge-project">Web Build</span>
+                <span class="timeline-date">Oct 2026</span>
+              </div>
+              <h3 class="timeline-title">Software Engineer Portfolio Website</h3>
+              <p class="timeline-institution">Self-Initiated Full-Stack Project</p>
+              <p class="timeline-desc">
+                Designed and built a clean, responsive web application featuring custom interactive chat, theme toggling, project modals, and dynamic filtering.
+              </p>
+              <div class="timeline-tags">
+                <span class="pill-badge">HTML5</span>
+                <span class="pill-badge">Vanilla CSS</span>
+                <span class="pill-badge">JavaScript</span>
+                <span class="pill-badge">Responsive</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- 5. PROJECTS SECTION                                   -->
+    <!-- ===================================================== -->
+    <section id="projects" class="section projects-section" aria-labelledby="projects-heading">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-tag">PORTFOLIO WORK</span>
+          <h2 id="projects-heading" class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Real-world applications showcasing embedded engineering, data science, and web development.</p>
+        </div>
+
+        <!-- Project Grid -->
+        <div class="projects-grid">
+          
+          <!-- Project 1: IoT Greenhouse Monitoring -->
+          <article class="project-card" data-project-id="iot">
+            <div class="project-thumb-box">
+              <img src="project_thumb_iot.jpg" alt="IoT Greenhouse Project Preview" class="project-thumb-img" loading="lazy">
+              <div class="project-overlay">
+                <button type="button" class="btn btn-primary btn-sm btn-view-project" data-project-id="iot">
+                  <span>View Details</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                </button>
+              </div>
+              <span class="project-category-badge">IoT & Embedded</span>
+            </div>
+
+            <div class="project-card-body">
+              <div class="project-meta-line">
+                <span class="project-year">2025</span>
+                <span class="project-status">Completed</span>
+              </div>
+              <h3 class="project-title">IoT Greenhouse Monitoring & Control</h3>
+              <p class="project-excerpt">
+                Autonomous environmental monitoring system powered by Arduino Uno. Continuously senses temperature and humidity to drive automated cooling fans and irrigation relays.
+              </p>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag">Arduino</span>
+                <span class="tech-tag">Embedded C</span>
+                <span class="tech-tag">DHT11</span>
+                <span class="tech-tag">Relays</span>
+              </div>
+
+              <div class="project-card-footer">
+                <button type="button" class="btn-text btn-view-project" data-project-id="iot">
+                  Detailed Case Study &rarr;
+                </button>
+                <a href="https://github.com/samyukthaps86-afk" target="_blank" rel="noopener noreferrer" class="btn-icon-link" title="View on GitHub" aria-label="GitHub Repository">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Data Analytics Dashboard -->
+          <article class="project-card" data-project-id="ds">
+            <div class="project-thumb-box">
+              <img src="project_thumb_datascience.jpg" alt="Data Analytics Dashboard Preview" class="project-thumb-img" loading="lazy">
+              <div class="project-overlay">
+                <button type="button" class="btn btn-primary btn-sm btn-view-project" data-project-id="ds">
+                  <span>View Details</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                </button>
+              </div>
+              <span class="project-category-badge">Data Science & ML</span>
+            </div>
+
+            <div class="project-card-body">
+              <div class="project-meta-line">
+                <span class="project-year">2026</span>
+                <span class="project-status">Featured</span>
+              </div>
+              <h3 class="project-title">Data Science Analytics Dashboard</h3>
+              <p class="project-excerpt">
+                Python data analytics pipeline transforming unstructured metrics into actionable insights with automated Pandas cleaning, statistical summaries, and Scikit-learn predictive models.
+              </p>
+
+              <div class="tech-tags">
+                <span class="tech-tag">Python 3</span>
+                <span class="tech-tag">Pandas</span>
+                <span class="tech-tag">Scikit-learn</span>
+                <span class="tech-tag">Matplotlib</span>
+              </div>
+
+              <div class="project-card-footer">
+                <button type="button" class="btn-text btn-view-project" data-project-id="ds">
+                  Detailed Case Study &rarr;
+                </button>
+                <a href="https://github.com/samyukthaps86-afk" target="_blank" rel="noopener noreferrer" class="btn-icon-link" title="View on GitHub" aria-label="GitHub Repository">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Responsive Software Engineer Portfolio -->
+          <article class="project-card" data-project-id="portfolio">
+            <div class="project-thumb-box">
+              <img src="project_thumb_portfolio.jpg" alt="Portfolio Website Preview" class="project-thumb-img" loading="lazy">
+              <div class="project-overlay">
+                <button type="button" class="btn btn-primary btn-sm btn-view-project" data-project-id="portfolio">
+                  <span>View Details</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                </button>
+              </div>
+              <span class="project-category-badge">Web Engineering</span>
+            </div>
+
+            <div class="project-card-body">
+              <div class="project-meta-line">
+                <span class="project-year">2026</span>
+                <span class="project-status">Live</span>
+              </div>
+              <h3 class="project-title">Software Engineer Portfolio Web App</h3>
+              <p class="project-excerpt">
+                Ultra-fast, responsive web application engineered with semantic HTML5, Vanilla CSS design tokens, and modular ES6 JavaScript. Includes interactive chat assistant and theme switcher.
+              </p>
+
+              <div class="tech-tags">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">Vanilla CSS</span>
+                <span class="tech-tag">JavaScript ES6</span>
+                <span class="tech-tag">Accessible</span>
+              </div>
+
+              <div class="project-card-footer">
+                <button type="button" class="btn-text btn-view-project" data-project-id="portfolio">
+                  Detailed Case Study &rarr;
+                </button>
+                <a href="https://github.com/samyukthaps86-afk" target="_blank" rel="noopener noreferrer" class="btn-icon-link" title="View on GitHub" aria-label="GitHub Repository">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- 6. TESTIMONIALS SECTION                               -->
+    <!-- ===================================================== -->
+    <section id="testimonials" class="section testimonials-section" aria-labelledby="testimonials-heading">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-tag">PEER & MENTOR ENDORSEMENTS</span>
+          <h2 id="testimonials-heading" class="section-title">Testimonials & Feedback</h2>
+          <p class="section-subtitle">Insights and feedback from technical mentors, project peers, and faculty on problem solving and collaboration.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          
+          <!-- Testimonial Card 1 -->
+          <article class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="testimonial-quote-icon" aria-hidden="true">“</div>
+              <div class="testimonial-rating" aria-label="5 out of 5 stars">
+                <span class="star-rating">★★★★★</span>
+              </div>
+            </div>
+
+            <blockquote class="testimonial-body">
+              <p class="testimonial-text">
+                “Samyuktha shows exceptional discipline when tackling algorithmic and systems challenges. Her grasp of low-level memory concepts in C and modular OOP in Java is outstanding. She consistently writes code that is clean, well-reasoned, and efficient.”
+              </p>
+            </blockquote>
+
+            <div class="testimonial-author">
+              <div class="author-avatar-badge" aria-hidden="true">👨‍🏫</div>
+              <div class="author-info">
+                <h3 class="author-name">Rajesh Kumar</h3>
+                <p class="author-role">Lead Technical Trainer & DSA Mentor</p>
+                <span class="author-org">TAP Academy</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Testimonial Card 2 -->
+          <article class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="testimonial-quote-icon" aria-hidden="true">“</div>
+              <div class="testimonial-rating" aria-label="5 out of 5 stars">
+                <span class="star-rating">★★★★★</span>
+              </div>
+            </div>
+
+            <blockquote class="testimonial-body">
+              <p class="testimonial-text">
+                “Working alongside Samyuktha on our IoT Greenhouse Automation system was incredible. Her ability to interface sensor telemetry circuits, debug real-time microcontrollers in Embedded C, and maintain thorough documentation kept our project moving forward seamlessly.”
+              </p>
+            </blockquote>
+
+            <div class="testimonial-author">
+              <div class="author-avatar-badge" aria-hidden="true">🧑‍💻</div>
+              <div class="author-info">
+                <h3 class="author-name">Ananya Rao</h3>
+                <p class="author-role">Embedded Systems Peer Collaborator</p>
+                <span class="author-org">IoT Project Team</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Testimonial Card 3 -->
+          <article class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="testimonial-quote-icon" aria-hidden="true">“</div>
+              <div class="testimonial-rating" aria-label="5 out of 5 stars">
+                <span class="star-rating">★★★★★</span>
+              </div>
+            </div>
+
+            <blockquote class="testimonial-body">
+              <p class="testimonial-text">
+                “Samyuktha stands out for her keen analytical curiosity and persistent drive in Data Science coursework. Whether constructing predictive modeling pipelines or optimizing analytical logic, her systematic thinking and eagerness to learn are exemplary.”
+              </p>
+            </blockquote>
+
+            <div class="testimonial-author">
+              <div class="author-avatar-badge" aria-hidden="true">🎓</div>
+              <div class="author-info">
+                <h3 class="author-name">Dr. H. M. Suresh</h3>
+                <p class="author-role">Professor, Dept. of Data Science</p>
+                <span class="author-org">Adichunchanagiri Institute of Technology</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- 7. CHAT SECTION                                       -->
+    <!-- ===================================================== -->
+    <section id="chat" class="section chat-section" aria-labelledby="chat-heading">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-tag">LIVE INTERACTIVE ASSISTANT</span>
+          <h2 id="chat-heading" class="section-title">Interactive Portfolio Chat</h2>
+          <p class="section-subtitle">Have questions about my background, skills, or projects? Ask my portfolio assistant in real-time!</p>
+        </div>
+
+        <div class="chat-wrapper">
+          <div class="chat-card">
+            
+            <!-- Chat Window Header -->
+            <div class="chat-header">
+              <div class="chat-assistant-info">
+                <div class="assistant-avatar">
+                  <span>🤖</span>
+                  <span class="online-indicator" title="Online"></span>
+                </div>
+                <div>
+                  <h3 class="assistant-name">Samyuktha Assistant</h3>
+                  <span class="assistant-status">Online · Ready to answer questions</span>
+                </div>
+              </div>
+
+              <div class="chat-header-actions">
+                <button type="button" class="btn-chat-action" id="btn-clear-chat" title="Clear conversation" aria-label="Clear chat conversation">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
+                  <span>Clear</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Quick Question Suggestions Bar -->
+            <div class="chat-suggestions-bar">
+              <span class="suggestions-label">Try asking:</span>
+              <div class="suggestions-list" id="suggestions-list">
+                <button type="button" class="suggestion-chip" data-query="What are your core skills?">⚡ Core Skills</button>
+                <button type="button" class="suggestion-chip" data-query="Tell me about your projects">📂 Projects</button>
+                <button type="button" class="suggestion-chip" data-query="What do mentors say about your work?">⭐ Testimonials</button>
+                <button type="button" class="suggestion-chip" data-query="Where are you studying?">🎓 Education</button>
+                <button type="button" class="suggestion-chip" data-query="How can I contact Samyuktha?">✉️ Contact Info</button>
+                <button type="button" class="suggestion-chip" data-query="Tell me about the IoT Greenhouse project">🌿 IoT Project</button>
+              </div>
+            </div>
+
+            <!-- Chat Messages Log -->
+            <div class="chat-messages-container" id="chat-messages" role="log" aria-live="polite">
+              <!-- Default Initial Message -->
+              <div class="chat-message-row bot-row">
+                <div class="message-avatar">🤖</div>
+                <div class="message-bubble bot-bubble">
+                  <p>
+                    Hello! 👋 I'm <strong>Samyuktha's Portfolio Assistant</strong>. You can ask me anything about her technical skills, engineering projects, educational background, or how to reach out to her.
+                  </p>
+                  <span class="message-timestamp" id="initial-bot-time">Just now</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Chat Input Bar -->
+            <form class="chat-input-form" id="chat-form">
+              <label for="chat-input" class="sr-only">Type a message to the assistant</label>
+              <input 
+                type="text" 
+                id="chat-input" 
+                class="chat-input-field" 
+                placeholder="Ask about skills, projects, contact info..." 
+                autocomplete="off" 
+                required
+              >
+              <button type="submit" class="btn btn-primary chat-submit-btn" id="chat-send-btn" aria-label="Send message">
+                <span>Send</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+            </form>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- 7. CONTACT SECTION                                    -->
+    <!-- ===================================================== -->
+    <section id="contact" class="section contact-section" aria-labelledby="contact-heading">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-tag">LET'S CONNECT</span>
+          <h2 id="contact-heading" class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Open to software engineering opportunities, internships, research collaborations, and tech discussions.</p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Left Column: Contact Channels & Socials -->
+          <div class="contact-info-column">
+            <div class="contact-card">
+              <h3 class="contact-card-title">Direct Communication</h3>
+              <p class="contact-card-sub">Feel free to send an email, call, or reach out through LinkedIn and GitHub.</p>
+
+              <div class="contact-items-list">
+                
+                <!-- Email Item -->
+                <div class="contact-item">
+                  <div class="contact-icon-box">✉️</div>
+                  <div class="contact-item-details">
+                    <span class="contact-item-label">Email Address</span>
+                    <a href="mailto:samyukthaps86@gmail.com" class="contact-item-value" id="contact-email-link">samyukthaps86@gmail.com</a>
+                  </div>
+                  <button type="button" class="btn-copy" id="btn-copy-email" title="Copy email address" aria-label="Copy email address">
+                    📋
+                  </button>
+                </div>
+
+                <!-- Phone Item -->
+                <div class="contact-item">
+                  <div class="contact-icon-box">📞</div>
+                  <div class="contact-item-details">
+                    <span class="contact-item-label">Phone / WhatsApp</span>
+                    <a href="tel:+919110852799" class="contact-item-value">+91 9110852799</a>
+                  </div>
+                </div>
+
+                <!-- Location Item -->
+                <div class="contact-item">
+                  <div class="contact-icon-box">📍</div>
+                  <div class="contact-item-details">
+                    <span class="contact-item-label">Location</span>
+                    <span class="contact-item-value">Chikkamagaluru, Karnataka, India</span>
+                  </div>
+                </div>
+
+                <!-- Status Item -->
+                <div class="contact-item">
+                  <div class="contact-icon-box">🟢</div>
+                  <div class="contact-item-details">
+                    <span class="contact-item-label">Current Availability</span>
+                    <span class="contact-item-value">Open to Full-Time / Internship roles</span>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Social Links -->
+              <div class="contact-socials-box">
+                <span class="socials-heading">Professional Profiles:</span>
+                <div class="social-buttons-row">
+                  <a href="https://github.com/samyukthaps86-afk" target="_blank" rel="noopener noreferrer" class="social-link-btn" title="GitHub Profile">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    <span>GitHub</span>
+                  </a>
+
+                  <a href="https://linkedin.com/in/samyuktha-ps-955a6b3b4" target="_blank" rel="noopener noreferrer" class="social-link-btn" title="LinkedIn Profile">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    <span>LinkedIn</span>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Contact Form -->
+          <div class="contact-form-column">
+            <div class="form-card">
+              <h3 class="form-card-title">Send a Direct Message</h3>
+              <p class="form-card-sub">Leave a note and I will get back to you within 24 hours.</p>
+
+              <form class="contact-form" id="contact-form" novalidate>
+                
+                <div class="form-group-row">
+                  <div class="form-group">
+                    <label for="form-name" class="form-label">Your Name <span class="required">*</span></label>
+                    <input type="text" id="form-name" name="name" class="form-input" placeholder="e.g. John Doe" required>
+                    <span class="form-error" id="name-error"></span>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="form-email" class="form-label">Email Address <span class="required">*</span></label>
+                    <input type="email" id="form-email" name="email" class="form-input" placeholder="e.g. john@example.com" required>
+                    <span class="form-error" id="email-error"></span>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="form-subject" class="form-label">Subject <span class="required">*</span></label>
+                  <input type="text" id="form-subject" name="subject" class="form-input" placeholder="e.g. Software Engineering Opportunity" required>
+                  <span class="form-error" id="subject-error"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="form-message" class="form-label">Message <span class="required">*</span></label>
+                  <textarea id="form-message" name="message" class="form-textarea" rows="5" placeholder="Share your project idea, opportunity, or question..." required></textarea>
+                  <span class="form-error" id="message-error"></span>
+                </div>
+
+                <!-- Form Feedback Message Banner -->
+                <div class="form-feedback" id="form-feedback" role="alert" aria-live="polite" hidden></div>
+
+                <button type="submit" class="btn btn-primary btn-block btn-submit" id="btn-submit-contact">
+                  <span class="btn-text-content">Send Message 🚀</span>
+                  <span class="btn-spinner" hidden></span>
+                </button>
+              </form>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================================= -->
+  <!-- PROJECT DETAILS MODAL                                   -->
+  <!-- ======================================================= -->
+  <div class="modal-backdrop" id="project-modal-backdrop" hidden>
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-project-title">
+      
+      <!-- Close Button -->
+      <button type="button" class="modal-close-btn" id="modal-close-btn" aria-label="Close project modal">&times;</button>
+      
+      <div class="modal-content-wrapper">
+        <div class="modal-image-col">
+          <img src="project_thumb_iot.jpg" alt="Project preview" class="modal-image" id="modal-image">
+        </div>
+        
+        <div class="modal-info-col">
+          <div class="modal-badge-row">
+            <span class="project-category-badge" id="modal-category">IoT & Embedded</span>
+            <span class="modal-year-badge" id="modal-year">2025</span>
+          </div>
+
+          <h3 class="modal-title" id="modal-project-title">Project Title</h3>
+          
+          <p class="modal-description" id="modal-description">
+            Detailed project description...
+          </p>
+
+          <div class="modal-features-section">
+            <h4 class="modal-subheading">Key Highlights & Architecture:</h4>
+            <ul class="modal-features-list" id="modal-features-list">
+              <li>Feature point 1</li>
+              <li>Feature point 2</li>
+            </ul>
+          </div>
+
+          <div class="modal-tech-section">
+            <h4 class="modal-subheading">Technologies Used:</h4>
+            <div class="modal-tech-pills" id="modal-tech-pills">
+              <!-- Pills populated dynamically -->
+            </div>
+          </div>
+
+          <div class="modal-footer-actions">
+            <a href="https://github.com/samyukthaps86-afk" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" id="modal-github-link">
+              <span>View Code on GitHub</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+            <button type="button" class="btn btn-secondary btn-sm" id="modal-dismiss-btn">Close</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ======================================================= -->
+  <!-- FOOTER                                                  -->
+  <!-- ======================================================= -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      
+      <div class="footer-top-row">
+        <div class="footer-brand">
+          <span class="brand-code">&lt;</span>
+          <span class="brand-name">Samyuktha PS</span>
+          <span class="brand-code">/&gt;</span>
+          <p class="footer-tagline">Software Engineer & Data Science Student passionate about high-impact digital systems.</p>
+        </div>
+
+        <ul class="footer-nav" aria-label="Footer Quick Links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#timeline">Timeline</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#chat">Chat</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom-row">
+        <p class="footer-copyright">
+          &copy; 2026 Samyuktha PS. Crafted with clean HTML5, CSS3 & JavaScript.
+        </p>
+
+        <div class="footer-actions">
+          <a href="#home" class="btn-back-to-top" aria-label="Scroll back to top">
+            <span>Back to top</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
